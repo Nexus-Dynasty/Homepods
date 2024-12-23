@@ -237,7 +237,7 @@ main .content {
 }
 
 main .content h1 {
-    font-size: 4.5rem;
+    font-size: 4rem;
 }
 
 main .content .showcase + img {
@@ -249,12 +249,12 @@ main .content .showcase + img {
 }
 
 main section {
-    padding: 0.5rem;
-}
-
-main section aside * {
     padding: 0.1rem;
 }
+
+/* main section aside * {
+    padding: 0.1rem;
+} */
 
 main section aside {
     width: 47%;
@@ -263,11 +263,11 @@ main section aside {
 }
 
 main section aside.left {
-    margin-right: 0.5rem;
+    margin-right: 0.2rem;
 }
 
 main section aside.right {
-    margin-left: 0.5rem;
+    margin-left: 0.2rem;
 }
 
 main section aside img {
@@ -669,8 +669,6 @@ footer .credits {
 .pulse {
   animation: pulse 2s infinite;
 }
-
-
 
 #myImg {
     cursor: pointer;
