@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="web design, affordable web design, professional web design">
+  	<meta name="author" content="King Harrison">
+    <link rel="icon" href="https://i.ibb.co/hywDZCC/20240816-165859.jpg">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>HOMEPODS | Home</title>
+</head>
+<body>
+    <a id="top" href="#"><i class="bi bi-arrow-up-circle"></i></a>
+
+  <header>
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <input type="checkbox" name="" id="">
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+
+            <div class="logo pulse"><i class="bi bi-apple"></i></div>
+
+            <ul class="menu-items">
+                <a href="#"> STORE </a>
+                <a href="#"> MAC </a>
+                <a href="#"> IPAD </a>
+                <a href="#"> IPHONE </a>
+                <a href="#"> MAIN SPEAKER </a>
+                <a href="#"> Watch </a>
+                <a href="#"> Tv </a>
+                <a href="#"> Airpod </a>
+
+                <a href="#"> <i class="bi bi-cart-fill"></i> </a>
+                <div class="tab">
+            </ul>
+        </div>
+    </nav>
+
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+    </div>
+  </header>
+
+<main><br><br><br>
+    <a id="top" href="#"><i class="bi bi-arrow-up-circle"></i></a>
+    
+    <article class="content">
+        <div class="showcase fade-in">
+            <h3>IMMERSIVE, HIGH-FIDELITY AUDIO</h3>
+            <h1 class="text-color">HOMEPOD</h1>
+        </div>
+        <img class="shake" src="https://i.ibb.co/HDYSCfW/1730019991298.png" alt="">
+        <div class="spacer"></div>
+    </article>
+
+    <section class="aside">
+        <aside class="left">
+            <h2>App up everything you hear</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat voluptatum voluptatibus asperiores tempore delectus cum qui quia architecto deserunt repellendus numquam, consectetur possimus sit, error quibusdam aliquid temporibus commodi eius!</p>
+            <img class="slide-in-left" src="https://i.ibb.co/HDYSCfW/1730019991298.png" alt="">
+        </aside>
+        <aside class="right">
+            <img src="https://i.ibb.co/vL0YtD0/1730020019024.png" alt="">
+            <h2>Lorem, ipsum dolor sit amet</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam molestias corrupti excepturi aut odit nulla, debitis labore voluptatibus quia rerum numquam nobis dicta atque voluptas cum maiores animi soluta voluptates.</p>
+        </aside>
+    </section>
+
+    <section class="foot-note">
+        <h1 class="text-color fade-in">100+ million songs? sound amazing.</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, qui laudantium reiciendis aliquid cumque sequi cupiditate recusandae obcaecati suscipit ex, dolores tempora molestias rem ratione reprehenderit quaerat quam voluptates non?</p>
+        <button class="wobble">GET STARTED <i class="bi bi-bell-fill wobble"></i></button>
+    </section>
+</main>
+
+<img id="myImg" class="showcase" src="https://i.ibb.co/D5sNWG1/image.png" alt="">
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img src="" alt="" class="modal-content" id="img01">
+        <div id="caption">Hello World</div>
+    </div>
+
+<footer>
+    <div class="div-logo">
+        <div class="logo pulse"><i class="bi bi-apple"></i></div>
+    </div>
+
+    <div class="footer-ctn">
+        <div class="pages">
+            <ul>
+                <h4>Useful Links</h4>
+                <a href="">Home</a>
+                <a href="">Store</a>
+                <a href="">MAC</a>
+                <a href="">IPAD</a>
+                <a href="">IPHONE</a>
+                <a href="">MAIN SPEAKER</a>
+                <a href="">WATCH</a>
+                <a href="">TV</a>
+                <a href="">AIRPOD</a>
+            </ul>
+        </div>
+        <div class="pages">
+            <ul>
+                <h4>Expertise</h4>
+                <a href="">Lorrem</a>
+                <a href="">Lorrem</a>
+                <a href="">Lorrem</a>
+                <a href="">Lorrem</a>
+                <a href="">Lorrem</a>
+            </ul>
+        </div>
+        <div class="pages">
+            <ul>
+                <h4>Contact Us</h4>
+                <a href="mailto:nexus.designs.org@gmail.com"></a> nexus.designs.org@gmail</a>
+                <a href="tel:+2349167696287">(+234) 916 769 6287</a>
+            </ul>
+        </div>
+        <div class="pages">
+            <ul>
+                <h4>Follow Links</h4>
+                <a href="">Facebook</a>
+                <a href="">Twitter</a>
+                <a href="">Instagram</a>
+                <a href="">Tiktok</a>
+            </ul>
+        </div>
+    </div>
+
+    <div class="credits">
+        <div class="left">
+            <h4>Homepod © 2024</h4>
+        </div>
+        <div class="right">
+            <h4>Designed by<a href="#">Nexus Dynasty</a></h4>
+        </div>
+    </div>
+</footer>
+
+<script>
+        var modal = document.getElementById("myModal");
+
+        var img = document.getElementById("myImg");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+
+        img.onclick = function() {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            // captionText.innerHTML = this.alt;
+        }
+
+        var span = document.getElementsByClassName("close")[0];
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+</script>
+</body>
+</html>

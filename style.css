@@ -1,0 +1,774 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    color: var(--txt);
+    position: relative;
+    box-sizing: border-box;
+}
+
+:root {
+    --txt: white;
+    --pri: hsl(158, 95%, 34%);
+    --bgc: #0d1025;
+    --btn: #181A29;
+    --icons: white;
+    --hover: #3abdb4;
+    --trans: 0.9s ease-in-out;
+}
+
+/* All EMements */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    background-color: var(--bgc);
+}
+
+i {
+    color: var(--icons);
+}
+
+i:hover {
+    color: var(--hover) !important;
+}
+
+a {
+    padding: 10px;
+    text-decoration: none;
+}
+
+a:hover, li:hover {
+    border-radius: 5px;
+    color: var(--hover);
+    text-decoration: underline;
+}
+
+#top {
+    top: 90%;
+    right: 10%;
+    z-index: 100;
+    position: fixed;
+}
+
+#top {
+    font-size: 2rem;
+    color: var(--icons);
+}
+
+#top:hover {
+    color: var(--hover);
+}
+
+button {
+    border: none;
+    color: white;
+    font-weight: 900;
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    background-color: var(--btn);
+    border: 3px solid transparent;
+}
+
+button:hover {
+    color: var(--hover);
+    transition: var(--trans);
+    background-color: transparent;
+    border: 3px solid var(--hover);
+}
+
+button:hover i {
+    color: var(--hover);
+}
+
+/* Header */
+header {
+    top: -5px !important;
+    width: 100%;
+    position: fixed;
+}
+
+.progress-container {
+    width: 100%;
+    height: 8px;
+    background: #ccc;
+}
+
+.progress-bar {
+    width: 0%;
+    height: 8px;
+    background: var(--hover);
+}
+
+.navbar input[type="checkbox"],
+.navbar .hamburger-lines {
+    display: none;
+}
+
+.navbar {
+    width: 100%;
+    z-index: 100;
+    color: var(--bgc);
+    max-height: 4rem;
+    padding: 1rem 1rem 1rem 0;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1.logo {
+    color: var(--txt);
+}
+
+div.logo {
+    width: 30px;
+    order: 1;
+    font-size: 2rem;
+    margin: 0 1rem 0 0;
+}
+
+.menu-items {
+    order: 2;
+    display: flex;
+    text-transform: uppercase;
+}
+
+.menu-items a {
+    list-style: none;
+    color: var(--txt);
+    font-weight: 900;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: var(--hover);
+    border-radius: 5px;
+    transform: scalex(0);
+    transition: all 0.6s ease;
+    bottom: 0;
+    left: 0;
+}
+
+.navbar a:hover::before {
+    transform: scalex(1);
+}
+
+header {
+    top: 0%;
+    left: 0%;
+    margin: 0;
+    z-index: 1;
+    width: 100%;
+    position: fixed;
+    background: var(--bgc);
+    backdrop-filter: blur(8.9px);
+    border-bottom: 0.3px solid var(--pri);
+    -webkit-backdrop-filter: blur(8.9px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+header nav {
+    margin: 0 1rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1rem;
+    display: inline-block;
+}
+
+header ul {
+    margin: 0;
+    list-style: none;
+}
+
+header a {
+    color: var(--txt);
+    font-weight: 600;
+}
+
+/* Main */
+main {
+    width: 100%;
+    padding: 0 1rem;
+    color: var(--txt);
+    background-color: var(--bgc);
+}
+
+main h1, 
+main h2, 
+main h3, 
+main h4, 
+main h5, 
+main h6 {
+    text-transform: uppercase;
+}
+
+main .content,
+main section {
+    margin-bottom: 5rem;
+}
+
+main .content div.showcase {
+    margin-top: 3rem;
+}
+
+main .content {
+    width: 100%;
+    height: 30rem;
+    padding-top: 5rem;
+    text-align: center;
+    background-image: url('./images/image\ copy.png');
+    background-size: 100%;
+}
+
+main .content h1 {
+    font-size: 4.5rem;
+}
+
+main .content .showcase + img {
+    top: 40%;
+    left: 0%;
+    width: 95%;
+    height: fit-content;
+    position: absolute;
+}
+
+main section {
+    padding: 0.5rem;
+}
+
+main section aside * {
+    padding: 0.1rem;
+}
+
+main section aside {
+    width: 47%;
+    display: inline-block;
+    height: fit-content !important;
+}
+
+main section aside.left {
+    margin-right: 0.5rem;
+}
+
+main section aside.right {
+    margin-left: 0.5rem;
+}
+
+main section aside img {
+    width: 100%;
+    height: fit-content;
+}
+
+img.showcase {
+    width: 100%;
+    height: 50rem;
+    display: block;
+}
+
+/* Footer */
+footer {
+    background-color: var(--bgc);
+}
+
+.foot-note {
+    text-align: center;
+}
+
+footer {
+    padding: 2rem 1rem 0 1rem;
+    border-top: 2px solid white;
+    background-color: var(--bgc);
+}
+
+footer .pages {
+    margin: 0 1rem;
+    width: fit-content;
+    flex-wrap: wrap;
+    display: inline-flex;
+    align-items: center;
+}
+
+footer .pages,
+footer .pages a {
+    color: var(--txt);
+}
+
+footer .pages a {
+    display: block;
+}
+
+footer .pages a:hover {
+    border-radius: 5px;
+    background-color: rgb(61, 60, 60);
+}
+
+footer .credits {
+    padding: 1rem 0;
+    border-top: 1px solid white;
+}
+
+@media screen and (max-width: 500px) {
+    .navbar-container input[type="checkbox"]:checked~.logo {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .navbar {
+        opacity: 0.95;
+    }
+
+    .navbar-container input[type="checkbox"],
+    .navbar-container .hamburger-lines {
+        display: block;
+    }
+
+    .navbar-container {
+        height: 64px;
+        display: block;
+        position: relative;
+    }
+
+    .navbar-container input[type="checkbox"] {
+        top: -5px;
+        left: 10px;
+        z-index: 5;
+        opacity: 0;
+        width: 32px;
+        height: 40px;
+        display: block;
+        cursor: pointer;
+        position: absolute;
+    }
+
+    .navbar-container .hamburger-lines {
+        top: 0px;
+        left: 10px;
+        z-index: 2;
+        width: 35px;
+        height: 28px;
+        display: block;
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .navbar-container .hamburger-lines .line {
+        height: 4px;
+        width: 100%;
+        display: block;
+        border-radius: 10px;
+        background: #333;
+    }
+
+    .navbar-container .hamburger-lines .line1 {
+        transform-origin: 0% 0%;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .navbar-container .hamburger-lines .line2 {
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .navbar-container .hamburger-lines .line3 {
+        transform-origin: 0% 100%;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .navbar .menu-items {
+        padding: 100px;
+        height: 100vh;
+        max-width: 300px;
+        display: flex;
+        overflow: scroll;
+        margin-left: -40px;
+        padding-left: 40px;
+        background: var(--bgc);
+        flex-direction: column;
+        transform: translate(-150%);
+        box-shadow: 1px 0px 5px 0px #aaa;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .navbar .menu-items a {
+        font-weight: 500;
+        font-size: 1.1rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .navbar .logo {
+        top: -6px;
+        left: 45%;
+        font-size: 3rem !important;
+        position: absolute;
+    }
+
+    .navbar-container input[type="checkbox"]:checked~.menu-items {
+        transform: translateX(0);
+    }
+
+    .navbar-container input[type="checkbox"]:checked~.hamburger-lines .line1 {
+        transform: rotate(45deg);
+    }
+
+    .navbar-container input[type="checkbox"]:checked~.hamburger-lines .line2 {
+        transform: scaleY(0);
+    }
+
+    .navbar-container input[type="checkbox"]:checked~.hamburger-lines .line3 {
+        transform: rotate(-45deg);
+    }
+
+    .menu-items a {
+        font-size: 1.3rem;
+    }
+
+    .menu-items button {
+        display: block;
+        margin: 10px 0;
+    }
+
+    footer .div-logo, footer .logo {
+        display: none;
+    }
+    
+    footer .pages {
+        width: 47%;
+        padding: 0;
+        flex-wrap: wrap;
+        margin: 1rem 0.2rem;
+        display: inline-flex;
+    }
+    
+    footer .pages ul,
+    footer .pages h4 {
+        width: 100%;
+    }
+
+    footer .credits {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #top {
+        right: 2%;
+    }
+    
+    main .content {
+        padding: 1rem;
+        height: 55rem;
+    }
+    
+    main .content h1 {
+        font-size: 12rem;
+    }
+    
+    main .content .showcase + img {
+        top: 20%;
+        left: 10%;
+        width: 70%;
+        height: fit-content;
+        position: absolute;
+    }
+
+    main section h1 {
+        font-size: 5rem;
+    }
+
+    main .foot-note p {
+        width: 50%;
+        margin: auto;
+        text-align: center;
+    }
+    
+    footer .div-logo {
+        width: 20%;
+        height: 25rem;
+        display: inline-block;
+    }
+    
+    footer .div-logo .logo {
+        display: block;
+    }
+    
+    footer .footer-ctn {
+        width: 79%;
+        float: right;
+    }
+
+    footer .footer-ctn .pages {
+        margin: 0 1rem;
+    }
+
+    footer .logo {
+        width: 100%;
+        font-size: 12rem;
+        flex-wrap: wrap;
+        margin: 0 0 0 3rem;
+        display: inline-flex;
+    }
+
+    footer .credits {
+        width: 80%;
+        margin: auto;
+    }
+
+    footer .credits .left {
+        width: fit-content;
+        display: inline-block;
+    }
+    
+    footer .credits .right {
+        float: right;
+    }
+}
+
+/* Animations */
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-5px);
+    }
+
+    50% {
+        transform: translateX(5px);
+    }
+
+    75% {
+        transform: translateX(-5px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.shake {
+    animation: shake 0.5s ease-in-out infinite;
+}
+
+/* Wobble Animation: Moves the element back and forth to create a wobbling effect, useful for drawing attention. */
+@keyframes wobble {
+    0% {
+        transform: translateX(0);
+    }
+
+    15% {
+        transform: translateX(-25%) rotate(-5deg);
+    }
+
+    30% {
+        transform: translateX(20%) rotate(3deg);
+    }
+
+    45% {
+        transform: translateX(-15%) rotate(-3deg);
+    }
+
+    60% {
+        transform: translateX(10%) rotate(2deg);
+    }
+
+    75% {
+        transform: translateX(-5%) rotate(-1deg);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.wobble {
+    transition: 0.9s ease-in-out;
+    animation: wobble 1s ease-in-out infinite;
+}
+
+/* Fade In Animation: Smoothly transitions the element from invisible to visible. Customize as needed. */
+@keyframes fadeIn {
+    30% {
+        opacity: 0;
+        transform: translateY(200px) scale(0);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.fade-in {
+    animation: fadeIn both;
+    animation-timeline: view();
+}
+
+/* Slide In from Left Animation: Slides the element in from the left side. Adjust values as necessary. */
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.slide-in-left {
+    transition: 0.5s ease-in-out;
+    animation: slideInLeft both;
+    animation-timeline: view(70% 5%);
+}
+
+/* Text Color Animation: Creates a gradient text color animation that smoothly transitions through different colors. Ideal for headings or any text you want to highlight with dynamic color changes. */
+.text-color {
+    color: #000;
+    background-image: linear-gradient(to right,
+            #60a5fa,
+            #fb923c,
+            #7e22ce,
+            #60a5fa);
+    background-size: 200% auto;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: TextColor 5s linear infinite;
+}
+
+@keyframes TextColor {
+    to {
+        background-position: -200% center;
+    }
+}
+
+/* Pulse Animation: Creates a pulsing effect, perfect for skeleton loaders or highlighting elements. */
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.4; }
+  100% { opacity: 1; }
+}
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+
+
+#myImg {
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+    margin: auto;
+}
+
+#myImg:hover {
+    opacity: 0.7;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 100px;
+    /* overflow: auto; */
+    background-color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    max-height: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 5px;
+    /* border: 1px solid white; */
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    position: relative;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+    font-size: 3rem;
+}
+
+.modal-content,
+#caption {
+    animation-name: zoom;
+    -webkit-animation-name: zoom;
+    animation-duration: 0.6s;
+    -webkit-animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+@-webkit-keyframes zoom {
+    from {
+        -webkit-transform: scale(0);
+    }
+
+    to {
+        -webkit-transform: scale(1);
+    }
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 700px) {
+    .modal-content {
+        width: 90%;
+    }
+}
